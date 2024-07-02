@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+textarea {
+    height: 45vh;
+    width: 95%;
+    border: none;
+    margin: 10px;
+    background-color: transparent;
+    font-size: 30px;
+    outline:none;
+    color: #1e5188;
+}
+.salida {
+    height: fit-content;
+}
+
+textarea::placeholder{
+    color: #1e5188;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.botn1{
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #1e5188;
+    border-radius: 15px;
+    background-color: #1e5188;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.botn2{
+    width: 48%;
+    padding: 20px;
+    border: 1px solid #1e5188;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #1e5188;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #1e5188;
+    background-color: rgba(202, 202, 202, 0.719);
+}
+
+/*MI CODIGO*/
+body{
+    display: flex;
+    background-color: #eaf3fd;
+    padding: 3%;
+    gap: 20px;
+    height: 100vh;
+}
+.grancont{
+    width: 80%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.primerlogo{
+    width: 100%;
+}
+.caja{
+    width: 700px;
+    padding: 50px;
+}
+.contenedor1{
+    margin: 10px;
+}
+.contenedor2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 20%;
+    text-align: center;
+    box-shadow: 2px 2px 2px rgba(119, 119, 119, 0.671);
+}
+
+#outputContainer {
+    display: none;
+}
+
+.logo {
+    height: 40px;
+}
+
+.imagen{
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.contenedor2 p {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.alerta{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+.icono{
+    width: 20px;
+}
+
+
+/*media queries*/
+@media only screen and (max-width: 768px){
+    body{
+        display: block;
+    }
+    .imagen{
+        display: none;
+    }
+    .grancont{
+        width: auto;
+        padding: 10px;
+    }
+    .caja{
+        padding: 20px;
+        width: auto;
+    }
+    .primerlogo{
+        padding-bottom: 100px;
+        padding-top: 20px;
+        padding-left: 40px;
+    }
+
+    .contenedor2 {
+        width: auto;
+        padding: 22px;
+        height:min-content
+    }
+    .contenedor2 p {
+        margin-top: 12px;
+        font-size: 14px;
+    }
+
+    textarea{
+        font-size: 40px;
+    }
+    .botn1, .botn2{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    textarea {
+        font-size: 30px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+        width: 300px;
+        align-items: center;
+    }
+
+    .botn1, .botn2{
+        width: 100%;
+    }
+
+    .contenedor2 p {
+        margin-top: 9px;
+        font-size: 16px;
+    }
+    .contenedor2{
+        padding: 10px;
+    }
+
+    .caja{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 0px;
+    }
+}
